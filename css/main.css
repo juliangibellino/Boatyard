@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+
+.wrapper{
+    min-width: 320px;
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.nav-header{
+    background: #342b30;
+    height: 155px;
+    border-bottom: 5px solid #bebebe;
+}
+
+
+.form-container{
+    width: 100%;
+    padding: 0 20px;
+}
+
+.form-container .col1{
+    width: 50%;
+    float: left;
+}
+
+.form-container .col2{
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+
+form input,
+form label,
+form button{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+form input[type=text],
+form input[type=email],
+form input[type=password]{
+    width: 100%;
+    margin: 10px 0;
+    padding: 25px 20px;
+    border: 1px #2d292a solid;
+    border-radius: 5px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #939393;
+}
+
+form label,
+form a{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #363435;
+}
+
+form label input[type=checkbox]{
+    margin-right: 10px;
+}
+
+form button{
+    width: 100%;
+    margin: 10px 0;
+    padding: 25px 20px;
+    font-weight: 600;
+    font-size: 36px;
+    letter-spacing: 0;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: 0 2px 0 rgba(0,0,0, 0.3);
+    border: 1px #302728 solid;
+    border-radius: 5px;    
+    background: #f8931d; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f8931d 0%, #f5951a 100%); /* FF3.6+ */  
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8931d), color-stop(100%,#f5951a)); /* Chrome,Safari4+ */    
+    background: -webkit-linear-gradient(top,  #f8931d 0%,#f5951a 100%); /* Chrome10+,Safari5.1+ */  
+    background: -o-linear-gradient(top,  #f8931d 0%,#f5951a 100%); /* Opera 11.10+ */   
+    background: -ms-linear-gradient(top,  #f8931d 0%,#f5951a 100%); /* IE10+ */ 
+    background: linear-gradient(to bottom,  #f8931d 0%,#f5951a 100%); /* W3C */ 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8931d', endColorstr='#f5951a',GradientType=0 ); /* IE6-8 */
+}
+
+footer{
+    border-top: 2px solid #bebebe;
+    margin: 20px 0;
+    padding: 15px 20px
+}
+
+footer h3,
+footer h4{
+    margin: 5px 0;
+    color: #372e31;
+    text-transform: uppercase;;
+    text-align: center;
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 600;
+}
+
+footer h3{
+    font-size: 16px;
+    line-height: 16px;
+}
+
+footer h4{
+    text-shadow: 0 -1px 0 #bfbbbc;
+}
+
+/*---------------
+    HELPERS
+-----------------*/ 
+.clear{
+    clear: both;
+}
