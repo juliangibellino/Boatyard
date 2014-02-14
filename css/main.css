@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .wrapper{
@@ -8,11 +9,113 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+/*--------------
+    HEADER
+--------------*/
 .nav-header{
     background: #342b30;
-    height: 155px;
+    height: 150px;
     border-bottom: 5px solid #bebebe;
 }
+
+.nav-button{
+    float: left;
+    width: 120px;
+    height: 145px;
+    padding-top: 60px;
+    border-right: 2px solid #2b2427;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.nav-button span{
+    display: block;
+    width: 60px;
+    height: 8px;
+    margin: 0 auto 5px;
+    background: #201b1d;
+    border-bottom: 1px solid #3b3236;
+}
+
+.nav-header .logo{
+    display: block;
+    height: 145px;
+    margin: 0 0 0 120px;    
+    border-left: 2px solid #3b3236;
+    text-align: center;
+}
+
+.nav-header .logo img{
+    max-width: 100%;
+    height: auto;
+    padding: 0 10px;
+    position: relative;
+    top: 140px;
+    margin-top: -155px;
+    vertical-align: middle;
+}
+
+/*--------------
+    NAVIGATION
+--------------*/
+nav.drop-down{
+    display: none;
+    position: absolute;;
+    top: 145px;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #2b2427;
+    border-bottom: 5px solid rgba(0,0,0,0.1)
+}
+
+nav.drop-down.active{
+    display: block;
+}
+
+nav.drop-down ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav.drop-down ul li{
+    margin: 0;
+    padding: 0;
+}
+
+nav.drop-down ul li a{
+    display: block;
+    background: #3d3338;
+    font-weight: 600;
+    font-size: 32px;
+    color: #fff;
+    line-height: 32px;
+    text-shadow: 0 2px 0 #2a2326;
+    text-decoration: none;
+    padding: 38px 30px;
+    border-top: 1px solid #453a3f;
+    border-bottom: 2px solid #382f34;
+}
+
+nav.drop-down ul li:first-child a{
+    border-top: none;
+}
+
+nav.drop-down ul li a:before{
+    content: "";
+    float: right;
+    width: 13px;
+    height: 20px;
+    overflow: hidden;
+    margin-top: 8px;
+    background: url("../images/sprite.png") no-repeat 0 0;
+}
+
+
 
 
 .form-container{
