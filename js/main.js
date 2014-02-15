@@ -16,4 +16,13 @@ var mainNavigation = {
 
 $(function(){
 	mainNavigation.init();
+	$("#carousel").owlCarousel({
+		navigation : true, // Show next and prev buttons
+		slideSpeed : 300,
+		paginationSpeed : 400,
+		singleItem:true,
+		navigationText: false
+	});
+
+
 });

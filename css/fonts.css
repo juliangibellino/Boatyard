@@ -1,0 +1,28 @@
+@font-face {
+    font-weight: 600;
+    font-style: normal;
+    font-family:'din';
+    src: url('../fonts/dinbd___-webfont.eot');
+    src: url('../fonts/dinbd___-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/dinbd___-webfont.woff') format('woff'), url('../fonts/dinbd___-webfont.ttf') format('truetype'), url('../fonts/dinbd___-webfont.svg#din-boldregular') format('svg');
+}
+@font-face {
+    font-weight: 900;
+    font-style: normal;
+    font-family:'din';
+    src: url('../fonts/dinbk___-webfont.eot');
+    src: url('../fonts/dinbk___-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/dinbk___-webfont.woff') format('woff'), url('../fonts/dinbk___-webfont.ttf') format('truetype'), url('../fonts/dinbk___-webfont.svg#din-blackregular') format('svg');
+}
+@font-face {
+    font-weight: 400;
+    font-style: normal;
+    font-family:'din';
+    src: url('../fonts/dinmd___-webfont.eot');
+    src: url('../fonts/dinmd___-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/dinmd___-webfont.woff') format('woff'), url('../fonts/dinmd___-webfont.ttf') format('truetype'), url('../fonts/dinmd___-webfont.svg#din-mediumregular') format('svg');
+}
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family:'din';
+    src: url('../fonts/dinrg___-webfont.eot');
+    src: url('../fonts/dinrg___-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/dinrg___-webfont.woff') format('woff'), url('../fonts/dinrg___-webfont.ttf') format('truetype'), url('../fonts/dinrg___-webfont.svg#din-regularregular') format('svg');
+}
