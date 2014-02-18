@@ -245,10 +245,10 @@ nav.drop-down ul li a:before{
     text-transform: uppercase;
 }
 
-form input,
-form label,
-form button{
-    font-family: 'Source Sans Pro', sans-serif;
+input,
+label,
+button{
+    font-family: 'din', 'Source Sans Pro', sans-serif;
 }
 
 form input[type=text],
@@ -277,7 +277,7 @@ form label input[type=checkbox]{
     margin-right: 10px;
 }
 
-form button, a.cta{
+button[type='submit'], a.cta{
     display: block;
     width: 100%;
     margin: 10px 0;
@@ -304,14 +304,19 @@ a{
     text-decoration: none;
 }
 
+b{ font-weight: 900; }
+
 .title h2{
     font-size: 28px;
     font-weight: 600;
     line-height: 30px;
     text-align: center;
-    margin: 20px 0;
+    margin: 20px 0 0;
     padding-bottom: 25px;
     border-bottom: 2px solid #cecece;
+}
+.title h2 lower{
+    text-transform: lowercase;
 }
 .title p{
     font-size: 20px;
@@ -319,8 +324,134 @@ a{
     font-weight: 600;
     color: #342b2f;
     text-align: center;
-    margin: 10px 10%;
+    margin: 20px 10%;
 }
+
+.info-header{
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #cecece;
+}
+.info-header .image{
+    width: 50%;
+}
+.info-header .details{
+    position: relative;
+    float: right;
+    right: 0;
+    top: 0;
+    width: 50%;
+    background: #e8e8e8;
+}
+.info-header .details > div{
+    margin: 0 20px 0 0;
+    padding: 10px 20px;
+    border-bottom: 2px solid #cecece;
+}
+.info-header .details > div:last-child{
+    border-bottom: none;
+}
+.info-header .details p{
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 0;
+}
+.info-header .details .main-info p{
+    margin: 10px 0;
+    font-size: 28px;
+}
+.info-header .details .sub-info{
+    padding-right: 10px 0;
+}
+.info-header .details .sub-info p{
+    margin: 10px 0;
+    font-size: 14px;
+}
+.info-header .details .location p{
+    margin: 10px 0;
+    background: url("../images/location-pin.png") no-repeat right center;
+    padding: 5px 20px 0 0;
+}
+.info-header .details .location a{
+    color: #f7941e;
+    display: block;
+    min-height: 30px;
+    overflow: hidden;
+}
+.info-header .image{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+.info-header .image img{
+    position: relative;
+    max-width: 100%;
+    vertical-align: middle;
+}
+.call-out{
+    width: 100%;
+    border-bottom: 2px solid #cecece;
+    text-align: center;
+    padding: 10px 20px;
+}
+.call-out h3{
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+.call-out h3.highlight{
+    color: #f7941e;
+}
+.call-out p{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.order-details, .order-details .viewport{
+    height: 250px;
+}
+.order-details ol{
+    margin: 0 0;
+}
+.order-details ol li{
+    margin: 0 0 30px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.faq{
+    margin: 20px 0;
+}
+.faq, .faq .viewport{
+    height: 500px;
+}
+
+.faq .question{
+    border-bottom: 2px solid #cecece;
+}
+.faq .question .q{
+    margin: 0 0 35px;
+}
+.faq .question .q p{
+    margin: 20px 0 10px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+}
+.faq .question .a p{
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
 .contact{
     margin: 40px 20px;
 }
@@ -344,6 +475,7 @@ a{
     background: url("../images/sprite.png") no-repeat;
 }
 
+
 .contact h3.address{ background-position: -74px 0; }
 .contact h3.phone{ background-position: -74px -35px; }
 .contact h3.fax{ background-position: -74px -72px; }
@@ -353,6 +485,52 @@ a{
     font-weight: 600;
     margin: 5px 0;
 }
+
+.reservations .item{
+    width: 100%;
+    padding: 20px;
+    border-bottom: 2px solid #cecece;
+}
+.reservations .item:after{
+    clear: both;
+    content: "/A";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+.reservations .item .details{
+    float: left;
+    width: 80%;
+    display: block;
+}
+
+.reservations .item .details:after{
+    clear: both;
+    content: "/A";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+.reservations .item .details p{
+    float: left;
+    margin: 0;
+}
+.reservations .item .details .date{
+    width: 50%;
+}
+.reservations .item .details .time{
+    width: 50%;
+}
+
+.reservations .item .delete{
+    float: right;
+    width: 34px;
+    height: 34px;
+    background: url("../images/sprite.png") no-repeat -40px -100px;
+    cursor: pointer;
+}
+
+
 
 /*--------------
     FOOTER
@@ -384,9 +562,141 @@ footer h4{
     text-shadow: 0 -1px 0 #bfbbbc;
 }
 
+/*--------------
+    OVERLAY
+--------------*/
+.overlay{
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(0,0,0,0.5);
+}
+.overlay .overlay-wrapper{
+    position: relative;
+    top: 50%;
+    margin: -25% 20px 0;
+    padding: 60px 20px 20px;
+    background: #222222;
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.5);
+}
+.overlay p{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #f7941e;
+    text-align: center;
+    margin: 10px 0;
+    padding: 0 30px;
+}
+.overlay button[type='submit']{
+    font-size: 28px;
+    margin: 20px 0;
+    width: 100%;
+    text-shadow: 0 -2px 0 #bc6600;
+}
+.overlay .cancel{
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    top: 20px;
+    right: 20px;
+    background: url("../images/sprite.png") no-repeat -40px -100px;
+    cursor: pointer;
+}
+
+
 /*---------------
     HELPERS
 -----------------*/ 
 .clear{
     clear: both;
 }
+
+.clear-after:after{
+    clear: both;
+    content: "/A";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+
+/*----------------
+    SCROLLBAR
+----------------*/
+.custom-scroll{
+    width:100%;
+    position: relative;
+}
+
+.custom-scroll .viewport{
+    width: 95%;
+    overflow:hidden;
+    position:relative;
+    background: none;
+}
+
+.custom-scroll .overview{
+    list-style:none;
+    position:absolute;
+    left:0;
+    top:0;
+    margin:0;
+    padding: 0 20px 0 0;
+}
+
+.custom-scroll .scrollbar{
+    background: #e8e8e8;
+    position:absolute;
+    background-position:0 0;
+    right: 10px;
+    top:0;
+    width:10px;
+    border-radius: 20px;
+}
+
+.custom-scroll .track{
+    background: #e8e8e8;
+    height:100%;
+    width:15px;
+    position:relative;
+    padding:0;
+    border-radius: 20px;
+}
+
+.custom-scroll .thumb{
+    background: #f7941e;
+    height:20px;
+    width:15px;
+    cursor:pointer;
+    overflow:hidden;
+    position:absolute;
+    top:0;
+    left:0;
+    border-radius: 20px;
+}
+
+.custom-scroll .thumb .end{
+    background: #f7941e;
+    overflow:hidden;
+    height:5px;
+    width:25px;
+}
+
+.custom-scroll .disable{
+    display:none;
+}
+
+.noSelect{
+    user-select:none;
+    -o-user-select:none;
+    -moz-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+}
+

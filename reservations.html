@@ -27,9 +27,9 @@
                     <span><!--spacer--></span>
                     <span><!--spacer--></span>
                 </div>
-                <div class="logo">
+                <a class="logo" href="index.html">
                     <img src="images/header-logo.png">
-                </div>
+                </a>
             </header>
             <nav id="main-nav" class="drop-down">
                 <ul>
@@ -41,44 +41,56 @@
                 </ul>
             </nav>
             <section class="main-container">
-                <div id="carousel" class="owl-carousel carousel">                 
-                        <div class="item">
-                            <div class="item-container">
-                                <div class="image"><img src="images/carousel-boat-01.jpg" alt=""></div>
-                                <div class="desc">FUN. FAST. $50 Bucks.</div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="item-container">
-                                <div class="image"><img src="images/carousel-boat-01.jpg" alt=""></div>
-                                <div class="desc">FUN. FAST. $50 Bucks.</div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="item-container">
-                                <div class="image"><img src="images/carousel-boat-01.jpg" alt=""></div>
-                                <div class="desc">FUN. FAST. $50 Bucks.</div>
-                            </div>
-                        </div>
-                </div><!--end .carousel-->
-                <div class="form-container">
-                    <form action="#" method="post" id="login">
-                        <input type="email" placeholder="Email Address" />
-                        <input type="password" name="password" value="" placeholder="Passord">
-                        <a href="#forgot-password">Forgot Password?</a>
-                        <label class="inline col2" for="remember-password" class="col1"><input type="checkbox" checked="checked" name="remember-password" value=""> Remember Me</label>
-                        <button class="clear" type="submit">Login</button>
-                    </form>
-                </div><!--end form-container-->
-                <div class="inner-wrapper">
-                    <a class="cta" href="#">Reserve Your Boat</a>
+                <div class="title">
+                    <h2>Your Reservations</h2>
                 </div>
-            </section><!-- end .main-container-->
+                 <div id="reservations" class="reservations clear-after">
+                 <div class="item" id="example-001">
+                    <div class="details">
+                        <p class="date">January 17, 2014</p>
+                        <p class="time">2:00pm-4:00pm</p>
+                    </div>
+                    <div class="delete"></div>
+                 </div>
+                 <div class="item" id="example-002">
+                    <div class="details">
+                        <p class="date">January 18, 2014</p>
+                        <p class="time">2:00pm-4:00pm</p>
+                    </div>
+                    <div class="delete"></div>
+                 </div>
+                 <div class="item" id="example-003">
+                    <div class="details">
+                        <p class="date">January 19, 2014</p>
+                        <p class="time">2:00pm-4:00pm</p>
+                    </div>
+                    <div class="delete"></div>
+                 </div>
+                 <div class="item" id="example-004">
+                    <div class="details">
+                        <p class="date">January 20, 2014</p>
+                        <p class="time">2:00pm-4:00pm</p>
+                    </div>
+                    <div class="delete"></div>
+                 </div>
+                </div><!--.reservations end-->
+            
+            </section><!-- .main-container end-->
             <footer>
                 <h4>Get Onboard</h4>
                 <h3>Boatyard Inc &copy; 2014</h3>
             </footer>
         </div><!--end .wrapper-->
+
+        <div class="overlay" id="delete-reservation">
+            <div class="overlay-wrapper">
+                <div class="cancel"></div>
+                <div class="message">
+                    <p>Are you sure you want to cancel this reservation?</p>
+                    <button type="submit" id="delete">Cancel Reservation</button>
+                </div>
+            </div>
+        </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/libraries/jquery-1.10.2.min.js"><\/script>')</script>
