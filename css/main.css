@@ -4,8 +4,12 @@
 }
 
 .wrapper{
-    min-width: 320px;
-    width: 100%;
+    /*min-width: 320px;
+    width: 100%;*/
+    position: relative;
+    min-width: 640px;
+    max-width: 100%;
+    margin: 0 auto;    
     font-family: 'Source Sans Pro', sans-serif;
     color: #342b2f;
 }
@@ -75,10 +79,10 @@
 nav.drop-down{
     display: none;
     position: absolute;
+    width: 100%;
     z-index: 100;
     top: 145px;
     left: 0;
-    width: 100%;
     border-top: 1px solid #2b2427;
     border-bottom: 5px solid rgba(0,0,0,0.1)
 }
@@ -261,8 +265,15 @@ form input[type=password]{
     border-radius: 5px;
     font-size: 36px;
     font-weight: 600;
-    color: #939393;
+    color: #342b2f;
+    outline: none;
 }
+form input::-webkit-input-placeholder { color: #939393; }
+form input:-moz-placeholder { color: #939393; }
+form input::-moz-placeholder { color: #939393; }
+form input:-ms-input-placeholder { color: #939393; }
+form input:input-placeholder { color: #939393; }
+
 
 form label,
 form a{
@@ -277,7 +288,18 @@ form label input[type=checkbox]{
     margin-right: 10px;
 }
 
+form input.error{
+    border: 3px solid #f03535;
+}
+
+form input.error::-webkit-input-placeholder { color: #f03535; }
+form input.error:-moz-placeholder { color: #f03535; }
+form input.error::-moz-placeholder { color: #f03535; }
+form input.error:-ms-input-placeholder { color: #f03535; }
+form input.error:input-placeholder { color: #f03535; }
+
 button[type='submit'], a.cta{
+    clear: both;
     display: block;
     width: 100%;
     margin: 10px 0;
@@ -365,7 +387,7 @@ b{ font-weight: 900; }
 }
 .info-header .details .sub-info p{
     margin: 10px 0;
-    font-size: 14px;
+    font-size: 16px;
 }
 .info-header .details .location p{
     margin: 10px 0;
@@ -422,7 +444,7 @@ b{ font-weight: 900; }
 }
 .order-details ol li{
     margin: 0 0 30px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
 }
 
@@ -441,15 +463,15 @@ b{ font-weight: 900; }
 }
 .faq .question .q p{
     margin: 20px 0 10px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
-    line-height: 22px;
+    line-height: 24px;
 }
 .faq .question .a p{
     margin: 20px 0;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
-    line-height: 22px;
+    line-height: 24px;
 }
 
 .contact{
@@ -468,10 +490,10 @@ b{ font-weight: 900; }
 .contact h3{
     height: 30px;
     overflow: hidden;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 900;
     margin: 0 0 10px;
-    padding-left: 30px;
+    padding-left: 35px;
     background: url("../images/sprite.png") no-repeat;
 }
 
@@ -481,7 +503,7 @@ b{ font-weight: 900; }
 .contact h3.fax{ background-position: -74px -72px; }
 
 .contact p{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     margin: 5px 0;
 }
@@ -502,6 +524,7 @@ b{ font-weight: 900; }
     float: left;
     width: 80%;
     display: block;
+    font-size: 22px;
 }
 
 .reservations .item .details:after{
@@ -699,4 +722,5 @@ footer h4{
     -khtml-user-select:none;
     -webkit-user-select:none;
 }
+
 

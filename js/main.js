@@ -33,6 +33,52 @@ var detailsScrollbar = {
 	}
 };
 
+
+var validator = $("form.validate").validate({
+	rules: {
+		email: {
+			required: true,
+			email: true,
+			remote: "emails.action"
+		},
+		password: {
+			required: true
+		},
+		password_confirm: {
+			required: true,
+			equalTo: "#password"
+		}
+	},
+	messages: {
+		email: {
+			required: "Email is invalid",
+			minlength: "Email is invalid"
+		},
+		password: {
+			required: "Password is invalid"
+		},
+		password_confirm: {
+			required: "Repeat your password",
+			equalTo: "Password does not match above"
+		}
+	},
+	// the errorPlacement has to take the table layout into account
+	errorPlacement: function(error, element) {
+		console.log("error ", error.text(), " element ", element)
+		element.attr("placeholder", error.text());
+	},
+	// specifying a submitHandler prevents the default submit, good for the demo
+	submitHandler: function() {
+	},
+	// set this class to error-labels to indicate valid fields
+	success: function(label) {
+	},
+	highlight: function(element, errorClass) {
+		$(element).addClass(errorClass);
+	}
+});
+
+
 var reservationManager = {
 	init: function(){
 		var that = this;
@@ -59,14 +105,16 @@ var reservationManager = {
 	deleteReservation: function(){
 		//put ajax request here to delete reservation from the database
 		//on success remove item from DOM and close overlay
-		this.$currentItem.remove();
+		this.$currentItem.slideToggle(300, function(){
+			that.$currentItem.remove();
+		});		
 		this.closeConfirmation();
 	},
 	openConfirmation: function(e){
 		this.$currentItem = $(e.target).parent(".item").attr("id");
 		this.$currentItem = $("#" + this.$currentItem);
 		this.$overlay.fadeIn(100);
-		console.log("deleteReservation", this.$currentItem);
+		//console.log("deleteReservation", this.$currentItem);
 	},
 	closeConfirmation: function(){
 		delete this.$currentItem;

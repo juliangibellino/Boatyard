@@ -41,57 +41,43 @@
                 </ul>
             </nav>
             <section class="main-container">
-                <div class="inner-wrapper">
-                    <div class="title">
-                        <h2>FAQ<span class="lower">s</span></h2>
-                    </div>
-                    <div id="details-scrollbar" class="faq custom-scroll">
-                        <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div><!--.scroll-bar end-->
-                        <div class="viewport">
-                             <div class="overview">
-                                <div class="question">
-                                    <div class="q">
-                                        <p>Q: Why use Boatyard?</p>
-                                    </div>
-                                    <div class="a">
-                                        <p>A: We know how painful and expensive it can be to rent a beat-up boat from the shack at the local marina. We knew there had to be a better way, so we created one. Our low-cost, friction-free service was designed to provide our customers with the best boat rental experience...ever.</p>
-                                    </div>
-                                </div>
-                                <div class="question">
-                                    <div class="q">
-                                        <p>Q: How do I make a reservation?</p>
-                                    </div>
-                                    <div class="a">
-                                        <p>A: Simply sign in with your username and password, select the date and time of your rental and confirm your reservation details. Your boat will be waiting for you at the dock. It’s that easy.</p>
-                                    </div>
-                                </div>
-                                <div class="question">
-                                    <div class="q">
-                                        <p>Q: How do I pay for my rental?</p>
-                                    </div>
-                                    <div class="a">
-                                        <p>A: Once you’ve made a reservation, a Boatyard Admiral will contact you to process your payment.</p>
-                                    </div>
-                                </div>
-                        </div><!--.viewport end-->
-                    </div><!--.details end-->
-                </div>
-            </section><!-- .main-container end-->
+                <div id="carousel" class="owl-carousel carousel">                 
+                        <div class="item">
+                            <div class="item-container">
+                                <div class="image"><img src="images/carousel-boat-01.jpg" alt=""></div>
+                                <div class="desc">FUN. FAST. $50 Bucks.</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-container">
+                                <div class="image"><img src="images/carousel-boat-01.jpg" alt=""></div>
+                                <div class="desc">FUN. FAST. $50 Bucks.</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-container">
+                                <div class="image"><img src="images/carousel-boat-01.jpg" alt=""></div>
+                                <div class="desc">FUN. FAST. $50 Bucks.</div>
+                            </div>
+                        </div>
+                </div><!--end .carousel-->
+                <div class="form-container">
+                    <form action="#" method="post" id="login" class="validate">
+                        <input id="email" name="email" type="email" placeholder="Email Address" />
+                        <input id="password" name="password" type="password" name="password" value="" placeholder="Password">
+                        <div class="clear-after">
+                            <a href="request-password.html" class="col1">Forgot Password?</a>
+                            <label class="inline col2 clear-after" for="remember-password"><input type="checkbox" checked="checked" name="remember-password" value=""> Remember Me</label>
+                        </div>
+                        <button class="clear" type="submit">Login</button>
+                    </form>
+                </div><!--end form-container-->
+            </section><!-- end .main-container-->
             <footer>
                 <h4>Get Onboard</h4>
                 <h3>Boatyard Inc &copy; 2014</h3>
             </footer>
         </div><!--end .wrapper-->
-
-        <div class="overlay" id="delete-reservation">
-            <div class="overlay-wrapper">
-                <div class="cancel"></div>
-                <div class="message">
-                    <p>Are you sure you want to cancel this reservation?</p>
-                    <button type="submit" id="delete">Cancel Reservation</button>
-                </div>
-            </div>
-        </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/libraries/jquery-1.10.2.min.js"><\/script>')</script>
